@@ -31,6 +31,7 @@ from garage.trainer import Trainer
 @click.option('--batch_size', default=256)
 @click.option('--embedding_batch_size', default=64)
 @click.option('--embedding_mini_batch_size', default=64)
+@click.option('--seed', default=1)
 @wrap_experiment
 def pearl_metaworld_ml10(ctxt=None,
                          seed=3,
